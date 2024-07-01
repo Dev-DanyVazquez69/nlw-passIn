@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+
+{
+    "title": 123,
+    "details": "Uefa Europa League",
+    "maximumAttendees": 500
+
+}
+
+###
+
+POST http://localhost:3333/events/b7e8fbdb-edcc-48e6-9e8d-5ac37ad9c948/attendees
+Content-Type: application/json
+
+{
+    "name": "Daniel Santos",
+    "email": "danyv7818@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/getEvent/b7e8fbdb-edcc-48e6-9e8d-5ac37ad9c948
+
+###
+
+GET http://localhost:3333/attendees/7/badge
+
+###
+
+GET http://localhost:3333/attendees/6/check-in
+
+###
+
+GET http://localhost:3333/getEvent/b7e8fbdb-edcc-48e6-9e8d-5ac37ad9c948/attendees
